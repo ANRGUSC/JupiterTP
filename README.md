@@ -1,7 +1,6 @@
-# Jupiter  
+# JupiterTP
 
-Jupiter is an orchestrator for Dispersed Computing (distributed computing with networked computers) that 
-uses Docker containers and Kubernetes (K8s).  
+JupiterTP is a throughput optimized dispersed computing framework, built on top of Jupiter (https://github.com/ANRGUSC/Jupiter), which is an orchestrator for Dispersed Computing (distributed computing with networked computers) that uses Docker containers and Kubernetes (K8s). JupiterTP uses the same network and resource profilers, but built new schedulers, including Throughput HEFT (TPHEFT), Node Splitting (SPLIT) and Task Duplication (DUP). Further, JupiterTP built new CIRCE framework that can process pipelined input instances, even in the case of node splitting where each task can be scheduled on many nodes. For detailed introduction of the system, please refer to arXiv paper https://arxiv.org/abs/2112.13875.
 
 Jupiter enables complex computing applications that are specified as directed acyclic graph (DAG)-based task 
 graphs to be distributed across an arbitrary network of computers in such a way as to optimize the 
@@ -51,6 +50,8 @@ WAVE Random is a very simple algorithm that maps the tasks to a random node with
 
 WAVE Greedy is a Greedy algorithm that uses a weighted sum of different profiler data to map tasks to the compute nodes.
 
+JupiterTP added additional standalone mapper TPHEFT, and enhancement mappers (which can be applied to any base algorithms) SPLIT and DUP.
+
 
 ### CIRCE
 
@@ -72,14 +73,14 @@ If you are interested in cloning just the Jupiter Orchestrator, not the applicat
 specific files, just run 
 
 ```
-    git clone git@github.com:ANRGUSC/Jupiter.git
+    git clone git@github.com:ANRGUSC/JupiterTP.git
 ```
 
 If you are interested in cloning the Jupiter Orchestrator along with the Distributed 
 Network Anomaly Detection related files, run 
 
 ```
-    git clone --recurse-submodules git@github.com:ANRGUSC/Jupiter.git
+    git clone --recurse-submodules git@github.com:ANRGUSC/JupiterTP.git
     cd Jupiter
     git submodule update --remote
 ```
