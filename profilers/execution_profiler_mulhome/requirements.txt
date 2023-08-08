@@ -1,0 +1,12 @@
+paramiko
+numpy
+flask
+scp
+watchdog
+requests
+pyinotify
+pandas
+pymongo
+configparser
+paho-mqtt
+opencv-python

@@ -1,0 +1,63 @@
+Assign random master and slaves
+task 0 : up_rank = 5156.284988, down_rank = 0.000000
+task 2 : up_rank = 3426.295803, down_rank = 1729.989185
+task 3 : up_rank = 2762.086244, down_rank = 1729.989185
+task 1 : up_rank = 2644.435494, down_rank = 1729.989185
+task 5 : up_rank = 2466.387791, down_rank = 1729.989185
+task 4 : up_rank = 2068.095251, down_rank = 1729.989185
+task 6 : up_rank = 1824.252681, down_rank = 3332.032307
+task 7 : up_rank = 1204.043122, down_rank = 3288.032307
+task 8 : up_rank = 735.265150, down_rank = 3288.032307
+task 9 : up_rank = 255.000000, down_rank = 4901.284988
+node1:
+node2:
+task 6 : ast = 777, aft = 1370
+node3:
+node4:
+task 2 : ast = 791, aft = 1349
+node5:
+task 1 : ast = 0, aft = 665
+task 3 : ast = 665, aft = 1228
+task 7 : ast = 1228, aft = 1827
+node6:
+task 8 : ast = 1567, aft = 1890
+task 10 : ast = 1985, aft = 2201
+node7:
+task 4 : ast = 747, aft = 1436
+node8:
+node9:
+node10:
+node11:
+node12:
+node13:
+node14:
+node15:
+node16:
+task 5 : ast = 877, aft = 1358
+task 9 : ast = 1577, aft = 1683
+node17:
+node18:
+node19:
+node20:
+node21:
+node22:
+node23:
+node24:
+node25:
+redundant task 1 on node7
+redundant task 1 on node4
+redundant task 1 on node2
+redundant task 4 on node6
+makespan = 2201
+Successfully finish HEFT mapping 
+Time to finish HEFT mapping 15.7072410583
+ * Serving Flask app "master" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+('Recieved request for current mapping. Current mappings done:', 10)
+{'task0': 'node5', 'task1': 'node4', 'task2': 'node5', 'task3': 'node7', 'task4': 'node16', 'task5': 'node2', 'task6': 'node5', 'task7': 'node6', 'task8': 'node16', 'task9': 'node6'}
+10.244.0.1 - - [27/Sep/2020 02:42:03] "GET / HTTP/1.1" 200 -
+

@@ -1,0 +1,14 @@
+pandas
+paramiko
+scp
+monotonic
+pymongo
+watchdog
+apscheduler
+pyinotify
+cryptography
+flask
+psutil
+requests
+configparser
+paho-mqtt

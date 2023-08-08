@@ -1,0 +1,4 @@
+Troubleshooting
+===============
+
+.. warning:: You will notice that some times the jupiter deploy script says that certain pods are not running. If some pods persist in the list for a long time, it is advisable to look into the k8 dashboard to check whether the pod is on a CrashLoopBack state. If yes, you can just delete the pod using the dropdown menu in the dashboard. **DO NOT Delete Anything but the pod i.e. DO NOT delete the SVC, Deployment or the Recplicaset**. By doing this, the k8 will spawn a new instance of the pod. If the problem persists, look at the logs or the error message for more details.
